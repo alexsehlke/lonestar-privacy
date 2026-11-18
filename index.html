@@ -55,67 +55,131 @@
             font-size: 13px;
             color: #8a9ea6;
         }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 14px; }
+        th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid #e8eff2; color: #3a4a50; }
+        th { color: #2a5a6a; font-weight: 600; background: #f5f9fa; }
+        .table-wrap { overflow-x: auto; }
+        h3 { font-size: 16px; color: #2a5a6a; margin-top: 20px; margin-bottom: 8px; }
+        @media (max-width: 560px) { .container { padding: 32px 20px; } th, td { padding: 6px 6px; font-size: 13px; } }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Lone Star Puzzle Game &mdash; Last updated: November 17, 2026</p>
+        <p class="subtitle">Lone Star Puzzle Game (iOS) &mdash; Last updated: November 17, 2026</p>
 
         <h2>Overview</h2>
-        <p>Lone Star ("the App") is a puzzle game developed by Alex Sehlke. Your privacy is important to us. This policy explains what information the App collects, how it is used, and your choices.</p>
-
-        <h2>Information We Collect</h2>
-        <p>The App does not require an account, login, or registration, and we do not run our own servers. The App uses Apple services (Game Center and iCloud) for leaderboards and to sync your progress, and Google AdMob for advertising, as described below. We do not sell your data.</p>
-
-        <h2>Data Stored on Your Device</h2>
-        <p>The App stores the following data locally on your device to support gameplay:</p>
+        <p>Lone Star ("the App") is a puzzle game developed by Alex Sehlke. This policy explains, in plain terms, what data the App collects, who receives it, why, and how you can control it. You don't need an account to play, we don't run our own servers, and we never sell your data.</p>
+        <p>Data leaves your device in only these ways:</p>
         <ul>
-            <li>Puzzle progress and completion status</li>
-            <li>Game settings and preferences (e.g., sound, haptics)</li>
-            <li>Statistics such as solve times, streaks, and hint usage</li>
+            <li><strong>Leaderboards</strong> &mdash; only if you are signed in to Game Center.</li>
+            <li><strong>Advertising</strong> &mdash; Google AdMob shows ads in the free version.</li>
+            <li><strong>iCloud sync</strong> &mdash; a copy of your progress in your own iCloud account, which we cannot see.</li>
+            <li><strong>Anonymous statistics</strong> &mdash; anonymous counts used to show how many players solved today's puzzles and your overall rank.</li>
         </ul>
-        <p>This data is stored in the device's local storage (UserDefaults).</p>
 
-        <h2>iCloud Sync (iOS)</h2>
-        <p>If you are signed in to iCloud, the App keeps your progress (completed puzzles and times, streaks, stickers, badges, statistics, and today's unfinished daily puzzles) the same on all your Apple devices by storing a copy in <strong>your own iCloud account</strong> (iCloud key-value storage). This copy is stored by Apple under your Apple Account; we cannot see or access it, and it is used only to sync your progress. Using &ldquo;Reset All Progress&rdquo; in the App's Settings erases your progress on all your devices and in iCloud. If you are not signed in to iCloud, your progress stays on your device only.</p>
+        <h2>At a Glance</h2>
+        <div class="table-wrap">
+        <table>
+            <tr><th>Data</th><th>Collected by</th><th>Why</th><th>Linked to you</th><th>Used to track you</th></tr>
+            <tr><td>Game Center name</td><td>The App (leaderboard)</td><td>Show your name in the rankings</td><td>Yes</td><td>No</td></tr>
+            <tr><td>Game Center player ID</td><td>The App (leaderboard)</td><td>Keep your scores together as one entry</td><td>Yes</td><td>No</td></tr>
+            <tr><td>Game Center profile picture</td><td>The App (leaderboard)</td><td>Show your picture next to your name</td><td>Yes</td><td>No</td></tr>
+            <tr><td>Game results (solve times, puzzle counts, streaks, wins)</td><td>The App (leaderboard)</td><td>Rank players</td><td>Yes</td><td>No</td></tr>
+            <tr><td>Daily solves and total puzzles solved (anonymous)</td><td>The App</td><td>Show how many players solved today's puzzles, and your overall rank</td><td>No</td><td>No</td></tr>
+            <tr><td>Advertising identifier (IDFA)</td><td>Google AdMob</td><td>Show and measure ads</td><td>Yes</td><td>Yes, only if you allow tracking</td></tr>
+            <tr><td>Approximate location (from your IP address)</td><td>Google AdMob</td><td>Show ads relevant to your region, prevent fraud</td><td>Yes</td><td>Yes, only if you allow tracking</td></tr>
+            <tr><td>Ad interactions (ads shown, taps, app launches)</td><td>Google AdMob</td><td>Show and measure ads</td><td>Yes</td><td>No</td></tr>
+            <tr><td>Crash, performance and diagnostic data</td><td>Google AdMob</td><td>Keep ads working and measure their performance</td><td>No</td><td>No</td></tr>
+        </table>
+        </div>
+        <p>This matches the App Privacy section of the App's App Store page.</p>
 
-        <h2>Leaderboards (Game Center and iCloud)</h2>
-        <p>If you are signed in to Game Center, the App submits your scores (such as daily puzzle solve times and puzzle counts) to Apple Game Center leaderboards. In addition, the App stores leaderboard entries in its public database in Apple iCloud (CloudKit) so that rankings can be shown in the App. These entries contain:</p>
+        <h2>1. Data That Stays on Your Device</h2>
+        <p>Your puzzle progress, solve times, hints used, streaks, stickers, badges, statistics and settings (such as sound and haptics) are stored on your device. They are not sent to us.</p>
+
+        <h2>2. iCloud Sync</h2>
+        <p>If you are signed in to iCloud, the App keeps your progress the same on all your Apple devices. It does this by storing a copy in <strong>your own iCloud account</strong> (iCloud key-value storage). The copy includes completed puzzles and times, streaks, stickers, badges, statistics and today's unfinished daily puzzles.</p>
         <ul>
-            <li>Your Game Center display name, player identifier, and profile picture</li>
-            <li>Puzzle completion counts, solve times, streaks, and win counts</li>
-            <li>The date of each entry</li>
+            <li><strong>Who can see it:</strong> only you, through your Apple Account. Apple stores it; we cannot see or access it.</li>
+            <li><strong>Why:</strong> only to sync your progress between your devices.</li>
+            <li><strong>Your control:</strong> &ldquo;Reset All Progress&rdquo; in the App's Settings erases your progress on all your devices and in iCloud. If you are not signed in to iCloud, or turn iCloud off for the App, your progress stays on one device.</li>
         </ul>
-        <p>Leaderboard entries are visible to other players of the App. To show how many players completed each day's puzzles, the App also stores an anonymous record per completion with a random identifier that is generated by the App and not linked to you. To have your leaderboard entries removed, contact us at the address below.</p>
 
-        <h2>Advertising</h2>
-        <p>The App uses <strong>Google AdMob</strong> to display advertisements. AdMob may collect and use certain data to serve ads, including:</p>
+        <h2>3. Leaderboards</h2>
+        <p>This only applies if you are signed in to <strong>Game Center</strong>. If you are not, the App sends no leaderboard data.</p>
+
+        <h3>What is collected</h3>
         <ul>
-            <li>Device identifiers (e.g., Advertising ID / IDFA)</li>
-            <li>IP address (used for approximate location and fraud prevention)</li>
-            <li>General device information (model, OS version, screen size)</li>
-            <li>Ad interaction data (impressions, clicks)</li>
+            <li>Your Game Center display name, player ID and profile picture</li>
+            <li>Your game results: daily puzzle solve times, puzzle counts, perfect and no-hint solves, streaks, Challenge and Battle Rush wins, constellations completed</li>
+            <li>The date of each result</li>
         </ul>
-        <p>This data is collected and processed by Google in accordance with their privacy policy. We do not have access to personally identifiable information collected by AdMob.</p>
-        <p>You can opt out of personalized advertising by adjusting your device settings:</p>
+
+        <h3>Where it goes and why</h3>
         <ul>
-            <li><strong>iOS:</strong> Settings &gt; Privacy &amp; Security &gt; Tracking &mdash; disable "Allow Apps to Request to Track"</li>
-            <li><strong>Android:</strong> Settings &gt; Google &gt; Ads &gt; "Delete advertising ID" or "Opt out of Ads Personalization"</li>
+            <li><strong>Apple Game Center:</strong> your scores are submitted to the App's Game Center leaderboards. Apple's privacy policy applies to Game Center.</li>
+            <li><strong>The App's iCloud public database (Apple CloudKit):</strong> the App also stores your leaderboard entry there, so it can show daily and all-time rankings, your friends' rankings, and today's top solvers on the home screen. This database is run by Apple; as the developer, we can view it.</li>
+            <li><strong>Fair daily rankings:</strong> your daily times are also used to check that each player gets only one ranked attempt per daily puzzle per day.</li>
         </ul>
-        <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google Uses Data from AdMob</a>.</p>
 
-        <h2>Network Access</h2>
-        <p>All puzzles are bundled within the App and do not require an internet connection. The App connects to the internet to load advertisements via Google AdMob, and, when available, to Apple Game Center and iCloud for leaderboards and progress sync.</p>
+        <h3>Who can see it</h3>
+        <p>Other players of the App can see your name, profile picture and results in the leaderboards. Nobody else receives this data, and it is not used for advertising.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>We do not knowingly collect personal information from children under the age of 13. The App uses Google AdMob which is configured to comply with applicable regulations. If you believe a child has provided personal information, please contact us so we can take appropriate action.</p>
+        <h3>How long it is kept, and how to remove it</h3>
+        <p>Leaderboard entries are kept while the leaderboards exist. To stop new entries, sign out of Game Center (Settings &gt; Game Center). To have your existing entries removed, see <a href="delete-data.html">Delete Your Data</a> or email us at the address below.</p>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
+        <h2>4. Anonymous Statistics</h2>
+        <p>The App stores two kinds of anonymous records in its iCloud public database. Both use a random number that the App creates on your device instead of any name, Game Center ID or Apple Account, so they are not linked to you:</p>
+        <ul>
+            <li><strong>Daily solves:</strong> one record per daily puzzle you solve, holding the puzzle tier and the date. Used to show how many players solved each day's puzzles.</li>
+            <li><strong>Total puzzles solved:</strong> one number, updated as you play. Used to show your overall rank among all players.</li>
+        </ul>
+        <p>These work without Game Center but need iCloud; without iCloud nothing is sent.</p>
 
-        <h2>Contact</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <h2>5. Advertising (Google AdMob)</h2>
+        <p>The free version of the App shows ads from <strong>Google AdMob</strong>. The AdMob software in the App sends data directly to Google when it loads and shows an ad. We do not receive this data, and we never pass your leaderboard data, game results or Game Center details to Google.</p>
+
+        <h3>What AdMob collects, and why</h3>
+        <ul>
+            <li><strong>Advertising identifier (IDFA):</strong> only if you allow tracking (see below). Used to show and measure ads.</li>
+            <li><strong>Approximate location:</strong> worked out from your IP address. Used to show ads relevant to your region and to prevent fraud. AdMob does not use GPS.</li>
+            <li><strong>Ad interactions:</strong> which ads were shown or tapped, and app launches. Used to show ads and measure how they perform.</li>
+            <li><strong>Crash, performance and diagnostic data:</strong> from the ad software itself. Used to fix problems and measure ad performance.</li>
+        </ul>
+
+        <h3>Tracking and your choice</h3>
+        <p>The first time you open the App, iOS asks whether the App may track you. &ldquo;Tracking&rdquo; means Google may combine data from this App with data from other companies' apps and websites to personalize ads.</p>
+        <ul>
+            <li><strong>Allow:</strong> ads may be personalized to your interests.</li>
+            <li><strong>Ask App Not to Track:</strong> AdMob cannot read your advertising identifier and does not track you across other companies' apps and websites. You see the same number of ads either way.</li>
+        </ul>
+        <p>You can change this at any time in <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>. Buying <strong>Pro</strong> in the App turns ads off completely.</p>
+        <p>Google's use of this data is covered by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google Uses Data from AdMob</a>.</p>
+
+        <h2>6. What We Don't Collect</h2>
+        <ul>
+            <li>No email address, phone number or contacts</li>
+            <li>No precise (GPS) location</li>
+            <li>No photos from your library; the only picture used is your Game Center profile picture, for the leaderboards</li>
+            <li>No payment details: purchases are handled entirely by Apple</li>
+            <li>No sale of data, and no data brokers</li>
+        </ul>
+
+        <h2>7. Purchases</h2>
+        <p>In-app purchases are processed by Apple. The App only receives confirmation of what you bought, so it can unlock it. We never see your payment details.</p>
+
+        <h2>8. Network Access</h2>
+        <p>All puzzles are built into the App and play offline. The App goes online only to load ads, to use Game Center and the leaderboards, and to sync through iCloud.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>We do not knowingly collect personal information from children under the age of 13. If you believe a child has provided personal information, please contact us and we will remove it.</p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be shown on this page with a new &ldquo;Last updated&rdquo; date.</p>
+
+        <h2>11. Contact</h2>
+        <p>If you have any questions about this Privacy Policy, or want your data removed, contact us at:</p>
         <p><a href="mailto:alexsehlke@icloud.com">alexsehlke@icloud.com</a></p>
 
         <p style="margin-top: 20px; font-size: 14px; color: #6b8a94;">Looking for the <a href="google-play.html">Android Privacy Policy</a>?</p>
